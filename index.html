@@ -35,20 +35,20 @@
             <div class="agents__inner">
                 <div class="container">
                     <h2 class="agents__title up-txt">agents</h2>
-                    <div class="agent clipped-block">
+                    <div class="agent clipped-block" id="agentNum1">
                         <div class="agent__info">
                             <p class="agent__country">United Kingdom</p>
                             <h4 class="agent__name up-txt">phoenix</h4>
                         </div>
                         <img src="images/agents/phoenix.png" alt="agent" class="agent__picture">
                         <ul class="agent__ability-list">
-                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/1.png" alt="ablility" class="ability-pic"></li>
-                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/2.png" alt="ablility" class="ability-pic"></li>
-                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/3.png" alt="ablility" class="ability-pic"></li>
-                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/4.png" alt="ablility" class="ability-pic"></li>
+                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/1.svg" alt="ablility" class="ability-pic"></li>
+                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/2.svg" alt="ablility" class="ability-pic"></li>
+                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/3.svg" alt="ablility" class="ability-pic"></li>
+                            <li class="agents__ability-item list-item"><img src="images/abilities/phoenix/4.svg" alt="ablility" class="ability-pic"></li>
                         </ul>
                     </div>
-                    <div class="agent clipped-block">
+                    <div class="agent clipped-block" id="agentNum2">
                         <div class="agent__info">
                             <p class="agent__country">South Korea</p>
                             <h4 class="agent__name up-txt">jett</h4>
@@ -61,7 +61,7 @@
                             <li class="agents__ability-item list-item"><img src="images/abilities/jett/4.png" alt="ablility" class="ability-pic"></li>
                         </ul>
                     </div>
-                    <div class="agent clipped-block">
+                    <div class="agent clipped-block" id="agentNum3">
                         <div class="agent__info">
                             <p class="agent__country">Russia</p>
                             <h4 class="agent__name up-txt">sova</h4>
@@ -74,7 +74,7 @@
                             <li class="agents__ability-item list-item"><img src="images/abilities/sova/4.png" alt="ablility" class="ability-pic"></li>
                         </ul>
                     </div>
-                    <div class="agent clipped-block">
+                    <div class="agent clipped-block" id="agentNum4">
                         <div class="agent__info">
                             <p class="agent__country">China</p>
                             <h4 class="agent__name up-txt">sage</h4>
@@ -88,9 +88,54 @@
                         </ul>
                     </div> 
                 </div> 
+
+                <div class="abilities">
+                    <div class="ability clipped">
+                        <div class="ability__info clipped">
+                            <h3 class="ability__type">basic</h3>
+                            <h4 class="ability__name" id="abilityName1">Slow Orb</h4>
+                            <p class="ability__desc" id="abilityDesc1">Cast out a radianite orb that breaks into a slowing field upon impact with the ground.</p>
+                        </div>
+
+                        <div class="ability__pic">
+                            <img src="images/abilities/basic.png" alt="icon" class="ability__icon">
+                            <div class="cube"></div>
+                        </div>
+                    </div>
+
+                    <div class="ability clipped">
+                        <div class="ability__info clipped">
+                            <h3 class="ability__type">signature</h3>
+                            <h4 class="ability__name" id="abilityName2">Healing Orb</h4>
+                            <p class="ability__desc" id="abilityDesc2">Heal an ally or yourself to full health over a few seconds.</p>
+                        </div>
+
+                        <div class="ability__pic">
+                            <img src="images/abilities/signature.png" alt="icon" class="ability__icon">
+                            <div class="cube"></div>
+                        </div>
+                    </div>
+
+                    <div class="ability clipped">
+                        <div class="ability__info clipped">
+                            <h3 class="ability__type">ultimate</h3>
+                            <h4 class="ability__name" id="abilityName3">Ressurection</h4>
+                            <p class="ability__desc" id="abilityDesc3">Target a friendly corpse. After a short delay, revive them with full health.</p>
+                        </div>
+
+                        <div class="ability__pic">
+                            <img src="images/abilities/ultimate.png" alt="icon" class="ability__icon">
+                            <div class="cube"></div>
+                        </div>
+                    </div>
+
+                    <div href="#" class="ability abilities__button clipped"></div>
+                </div>
             </div>     
         </div>
     </main>
 
+
+<script src="main.js"></script>
 </body>
 </html>
