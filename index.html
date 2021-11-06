@@ -13,25 +13,38 @@
     
     <main class="main">
         <header class="header">
-            <ul class="menu">
-                <li class="menu__item list-item"><a href="#" class="menu__link"><img src="images/logos/riot.png" alt="riot-logo" class="riot-logo"></a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link"><img src="images/logos/valorant.png" alt="valorant-logo" class="valorant-logo"></a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">game</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">champions</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt dwn-list">news</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">patch notes</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt dwn-list">discover</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">esports</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">universe</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">shop</a></li>
-                <li class="menu__item list-item"><a href="#" class="menu__link up-txt">support</a></li>
-            </ul>
-            <ul class="current-user">
-                <li class="current-user__name list-item"><a href="#" class="current-user__link up-txt dwn-list">username</a></li>
-            </ul>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li class="menu__right-side list-item">
+                        <ul class="menu__inner">
+                            <li class="menu__item list-item"><a href="#" class="menu__link"><img src="images/logos/riot.png" alt="riot-logo" class="riot-logo"></a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link"><img src="images/logos/valorant.png" alt="valorant-logo" class="valorant-logo"></a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">game</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">champions</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt dwn-list">news</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">patch notes</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt dwn-list">discover</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">esports</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">universe</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">shop</a></li>
+                            <li class="menu__item list-item"><a href="#" class="menu__link up-txt">support</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__left-side list-item">
+                        <ul class="menu__inner">
+                            <li class="current-user__name list-item"><a href="#" class="current-user__link up-txt dwn-list">username</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
         </header>
 
-        <div class="agents">
+        <!-- <div class="agents">
             <div class="agents__inner">
                 <div class="container">
                     <h2 class="agents__title up-txt">agents</h2>
@@ -132,7 +145,7 @@
                     <div href="#" class="ability abilities__button clipped"></div>
                 </div>
             </div>     
-        </div>
+        </div> -->
     </main>
 
 
