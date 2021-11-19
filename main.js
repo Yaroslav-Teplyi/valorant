@@ -27,8 +27,7 @@ nextHeroButton.addEventListener('click', () => {
     case 4:
         addRemoveClass( agentNum4, agentNum3 );
         currentActiveHero = 1;
-        break;
-        
+        break;  
    }
 })
 
