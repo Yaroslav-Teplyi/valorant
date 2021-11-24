@@ -51,7 +51,7 @@
 }
 
 .header {
-    padding: 25px 50px;
+    padding: 22px 50px;
     background: #1F2326;
     position: sticky;
     top: 0;
@@ -143,6 +143,12 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__link:hover {
+    border-bottom-color: #FFFFFF;
 }
 
 .riot-logo, .valorant-logo {
@@ -179,23 +185,27 @@
 }
 
 .agents__inner {
-    height: 1000px;
+    height: calc(100vh - 80px);
     background-image: url("../images/backgrounds/agents.png");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    padding: 60px 50px 0;
+    width: 1920px;
+    margin: 0 auto;
 }
 
 .agents__title {
     font-family: "Druk Wide", sans-serif;
     font-style: normal;
-    font-size: 107px;
+    font-size: 87px;
     text-align: center;
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
@@ -248,7 +258,7 @@
 }
 
 .agent__picture {
-    height: 650px;
+    height: 580px;
 }
 
 .agent__ability-list {
@@ -279,8 +289,9 @@
 
 .abilities {
     display: flex;
-    margin: 20px 40px;
+    /* padding: 30px 40px; */
     justify-content: space-around;
+    width: 100%;
 }
 
 .ability {
