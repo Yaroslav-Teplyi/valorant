@@ -32,6 +32,10 @@
     box-sizing: border-box;
 }
 
+html {
+    cursor: url(../images/cursor.cur), auto;
+}
+
 .list-item {
     display: flex;
     list-style-type: none;
@@ -51,7 +55,7 @@
 }
 
 .header {
-    padding: 22px 50px;
+    padding: 0 50px;
     background: #1F2326;
     position: sticky;
     top: 0;
@@ -61,7 +65,7 @@
 .header__button {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    cursor: url(../images/pointer.cur), pointer;
     padding: 5px;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -115,10 +119,6 @@
   transition-duration: .25s;
 }
 
-.menu__item {
-  transition-duration: .25s;
-}
-
 .button__line {
     width: 20px;
     height: 2px;
@@ -136,23 +136,33 @@
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    line-height: 17px;
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url(../images/pointer.cur), pointer;
     display: flex;
     align-items: center;
-    padding-bottom: 4px;
+    height: 80px;
+}
+
+.menu__item:not(:first-child, :nth-child(2)) .menu__link {
     border-bottom: 2px solid transparent;
 }
 
-.menu__link:hover {
-    border-bottom-color: #FFFFFF;
+.menu__item:not(:first-child, :nth-child(2)) .menu__link:hover {
+    border-color: #FFFFFF;
+}
+
+.menu__item:first-child .menu__link {
+    height: 30px;
 }
 
 .riot-logo, .valorant-logo {
     height: 30px;
+}
+
+.menu__item {
+    transition-duration: .25s;
 }
 
 .menu__item:not(:first-child, :nth-child(2)) {
@@ -219,7 +229,7 @@
     background: #1F2326;
     border: 2px solid #1F2326;
     border-top-left-radius: 15px;
-    cursor: pointer;
+    cursor: url(../images/pointer.cur), pointer;
     position: relative;
     height: 100%;
     user-select: none;
@@ -289,6 +299,7 @@
     width: 100%;
     -webkit-animation: blink 2s linear infinite; 
 	animation: blink 2s linear infinite; 
+    user-select: none;   
 }
 
 @-webkit-keyframes blink { 
@@ -349,7 +360,7 @@
 .abilities__button {
     position: relative;
     width: 138px;
-    cursor: pointer;
+    cursor: url(../images/pointer.cur), pointer;
     transition: background .3s ease-in-out;
 }
 
